@@ -1,0 +1,780 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ul,ol {
+    list-style-type: none;
+}
+.clr {
+    clear: both;
+}
+.container {
+    width: 950px;
+    margin: 0 auto;
+}
+
+/*Navbar goes here*/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.nav-main {
+    display: flex;
+}
+.logo {
+    width: 140px;
+}
+.logo img {
+    padding-top: 15px;
+}
+.menu {
+    width: 810px;
+    text-align: right;
+}
+.menu ul li {
+    display: inline-block;
+    padding-left: 25px;
+}
+.menu ul li a {
+    line-height: 90px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all linear .3s;
+    position: relative;
+}
+.menu ul li a:hover {
+    color: #00e0d0;
+}
+.menu ul li a::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color:#00e0d0;
+    left: 0;
+    bottom: -12px;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.menu ul li a:hover::after {
+    opacity: 1;
+    width: 100%;
+}
+
+
+
+
+
+/*bannar part goes here*/
+.banner-img {
+    position: relative;
+    background:url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(9, 5, 47,0.85), rgba(49, 29, 94,0.85));
+    display: flex;
+    justify-content: center;
+}
+.banner-text {
+    text-align: center;
+    align-self: center;
+}
+.banner-text h3 {
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 58px;
+    position: relative;
+}
+.banner-text p {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    padding: 0 122px;
+    padding-bottom: 70px;
+    font-weight: 300px;
+    line-height: 24px;
+}
+.banner-text h3::after {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color: #00e0d0;
+    bottom: 31px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.banner-text a {
+    border: 2px solid #00e0d0;
+    padding: 14px 14px;
+    font-family: 'Hammersmith One', sans-serif;
+    color: #00e0d0;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.dots{
+    padding-top: 140px;
+}
+
+
+/*our story goes here*/
+.storymain{
+    display: flex;
+    padding-top: 80px;
+}
+.storyitem{
+  
+    padding-bottom: 100px;
+    padding-right: 100px;
+}
+.storytext{
+    
+    padding-bottom: 85px;
+}
+.storytext h1{
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    color: #413d4b;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+.storytext p{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #413d4b;
+    padding-right: 100px;
+    padding-bottom: 48px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.storytext a{
+    border: 2px solid #00e0d0;
+    padding: 14px 14px;
+    font-family: 'Hammersmith One', sans-serif;
+    color: #00e0d0;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+/*video part goes here*/
+.video{ 
+    position: relative;
+    background:url(../images/video.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(9, 5, 47,0.85), rgba(49, 29, 94,0.85));
+    display: flex;
+    justify-content: center;
+}
+.videotext {
+    text-align: center;
+    align-self: center;
+}
+.videotext h3 {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+.videotext a{
+    font-size: 120px;
+    color: #fff;
+    font-weight: 300;
+    padding-bottom: 36px;
+}
+
+/**expertise part goes here*/
+#expertise{
+   
+    padding-bottom: 100px;
+}
+.head{
+    padding-top: 70px;
+    text-align: center;
+}
+
+.head h1{
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    color: #413d4b;
+    font-weight: 700;
+    padding-bottom: 16px;
+}
+.head h5{
+    font-size: 14px;
+    font-family: 'Playfair Display', serif;
+    color: #2f2d35;
+    font-weight: 400;
+    padding-bottom: 105px;
+    position: relative;
+}
+
+.head h5::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #c6c4c9;
+    bottom: 84px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.exmain{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 80px;
+}
+.exitem{
+    width: 260px;  
+    text-align: center;
+    
+}
+.content {
+    
+    padding-bottom: 35px;
+}
+.content2{
+    padding-bottom: 39px;
+}
+
+.text h1{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #413d4b;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.text h4{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    line-height: 22px;
+    font-weight: 300;
+    text-align: center;
+    padding-right: 14px;
+}
+
+.exmain2{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 80px;
+}
+
+
+/*team part goes here*/
+.team-img {
+    position: relative;
+    background:url(../images/team.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(9, 5, 47,0.85), rgba(49, 29, 94,0.85));
+    display: flex;
+    justify-content: center;
+}
+.teamhead{
+    text-align: center;
+    padding-top: 70px;
+}
+.teamhead h2{
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-weight: 700; 
+      
+}
+.teamhead h5{
+    font-size: 14px;
+    font-family: 'Playfair Display', serif;
+    color: #f9f9f9;
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 66px;
+    position: relative;
+}
+.teamhead h5::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #655c80;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.teammain{
+    display: flex;
+    justify-content: space-between;
+}
+.teamitem{
+    width: 220px;
+    text-align: center;
+    
+}
+.teamtext{
+    border: 2px solid #79768d;
+    
+}
+.teamcontent img{
+    display: block;
+}
+.teamitem h3{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 22px;
+    padding-bottom: 11px;
+}
+.teamitem h4{
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: #fafafa;
+    font-weight: 300;
+    padding-bottom: 25px;
+}
+
+.teamfoot{
+    padding-top: 95px;
+    text-align: center;
+   
+}
+.teamfoot h5{
+    color: #f3f3f3;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 300;
+    padding-bottom: 43px;
+}
+
+.teamfoot a{
+    border: 2px solid #00e0d0;
+    padding: 14px 14px;
+    font-family: 'Hammersmith One', sans-serif;
+    color: #00e0d0;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+/*our works part goes here*/
+.workhead{
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+.workhead h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #413d4b;
+    padding-bottom: 20px;
+}
+.workhead h5{
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #2f2d35;
+    font-weight: 400;
+    padding-bottom: 60px;
+    position: relative;
+}
+.workhead h5::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #c6c4c9;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.workhead ul li {
+    display: inline-block;
+    padding-left: 30px;
+}
+.workhead ul li a {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color:#413d4b;
+    text-transform: uppercase;
+    font-weight: 400;
+    border: 2px solid #dddddd;
+    padding: 10px 10px;
+}
+.workmain{
+    display: flex;
+   flex-wrap: wrap;
+   padding-bottom: 85px;
+  
+}
+.workitem{
+    width: 16.47%;
+}
+.workitem img{
+    display: block;
+}
+.workfoot{
+    text-align: center;
+    padding-bottom: 85px;
+}
+.workfoot a{
+    border: 2px solid #00e0d0;
+    padding: 15px 30px;
+    font-family: 'Hammersmith One', sans-serif;
+    color: #00e0d0;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;   
+}
+
+
+
+/*quote part goes here*/
+
+.quote-img {
+    position: relative;
+    background:url(../images/team.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+.quote-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(9, 5, 47,0.85), rgba(49, 29, 94,0.85));
+    display: flex;
+    justify-content: center;
+}
+.quotehead{
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 52px;
+}
+.quotetext{
+    text-align: center;
+}
+.quotetext h5{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 26px;
+    padding: 0 105px;
+}
+
+.quotetext h3{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+.quotetext h4{
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    padding-bottom: 44px;
+}
+.quotetext ul li{
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.quotetext ul li ul li{
+    background-color: #00e0d0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/*news and client part goes here*/
+
+.news-client{
+    padding-top: 72px;
+    padding-bottom: 85px;
+    display: flex;
+ 
+}
+.news{
+    width: 460px;
+    margin-right: 100px;
+    
+}
+.news h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #413d4b;
+    padding-bottom: 36px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 22px;
+    display: inline-block;
+    border: 1px solid #ccc;
+
+    box-sizing: border-box;
+  }
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 22px;
+    display: inline-block;
+    border: 1px solid #ccc;
+   
+    box-sizing: border-box;
+  }
+ textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 22px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    height: 200px;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+ }
+
+ input[type=submit], select {
+    padding: 15px 30px;
+    margin-bottom: 22px;
+    display: inline-block;
+    border: 2px solid #11e2d3;
+    color: #11e2d3;
+    background-color: #fff;
+    box-sizing: border-box;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+  }
+.client{
+    width: 380px;
+}
+.clienthead{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #413d4b;
+    padding-bottom: 45px;
+} 
+
+.clientmain{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 45px;
+}
+
+
+/*footer part goes here*/
+
+.footer-img {
+    position: relative;
+    background:url(../images/footer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+.footer-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(9, 5, 47,0.85), rgba(49, 29, 94,0.85));
+    display: flex;
+    justify-content: center;
+}
+.tanjammain{
+    display: flex;
+}
+.tajam{
+    width: 310px;
+    
+    
+}
+.tajamtext{
+    margin-right: 20px;
+}
+.tajamlogo{
+    padding-top: 70px;
+    padding-bottom: 25px;
+}
+.tajamtext h5{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    padding-bottom: 78px;
+    line-height: 26px;
+    padding-right: 20px;
+}
+
+.tajamtext ul li{
+    display: inline-block;
+}
+.tajamtext ul li a{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+   
+}
+#condition{
+    padding-left: 25px;
+}
+.studio{
+    padding-top: 90px;
+    width: 270px;
+}
+.studio h1{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+.lc{
+    display: flex;
+    
+}
+.loactiontext{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    
+    padding-bottom: 24px;
+    line-height: 26px;
+    
+    padding-left: 15px;
+}
+.icon{
+    color: #fff; 
+    font-size: 14px;
+    padding-top: 3px;
+    padding-bottom: 24px;
+}
+.stay{
+    padding-top: 85px;
+    margin-left: 50px;
+    width: 300px;
+}
+.stay h1{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+
+#footform{
+    width: 211px;
+    padding: 12px 20px;
+    margin-bottom: 25px;
+    display: inline-block;
+    border: 1px solid #9d98b0;
+   
+    box-sizing: border-box;
+}
+
+.form{
+    display: flex;
+   
+}
+.form a{
+    background-color: #a199b3;
+    border: 1px solid #a199b3;
+    color: black;
+    height: 42px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    
+}
+
+.stay ul li{
+    display: inline-block;
+}
+.stay ul li a{
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    padding: 7px 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.copy {
+   
+    padding-top: 100px;
+    text-align: right;
+}
+.copy a{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
