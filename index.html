@@ -9,10 +9,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/slick.scss">
+    <link rel="stylesheet" href="css/themify-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
+    <div class="preloader">
+        <div class="loader"></div>
+      </div>
+    
+
+
+    <!--preloader ends here-->
+
+
+    <nav class="nav bg">
         <div class="container">
             <div class="nav-main">
                 <div class="logo">
@@ -22,13 +34,13 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">expertise</a></li>
-                        <li><a href="#">teams</a></li>
-                        <li><a href="#">works</a></li>
-                        <li><a href="#">people say</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="#banner">home</a></li>
+                        <li><a href="#story">about</a></li>
+                        <li><a href="#expertises">expertise</a></li>
+                        <li><a href="#team">teams</a></li>
+                        <li><a href="#work">works</a></li>
+                        <li><a href="#people">people say</a></li>
+                        <li><a href="#footer">contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -37,10 +49,12 @@
     <!--bannar part goes here-->
     <section id="banner">
         <div class="banner-img">
+          
             <div class="banner-overlay">
+               
                 <div class="banner-text">
                     <div class="container">
-                        <h3>We Are Awesome Creative Agency</h3>
+                        <h3>We Are Awesome <span class="typed"></span> </h3>
                       <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
                         <a href="#">learn more</a>
                        
@@ -57,7 +71,7 @@
     </section>
 
     <!--Our story goes here-->
-    <section>
+    <section id="story">
         <div class="container">
              <div class="storymain">
            <div class="storyitem">
@@ -80,7 +94,11 @@
             <div class="video-overlay">
                <div class="videotext">
                    <div class="container">
-                    <a href="#"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+                    <div class="vid-overlay">
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/MtCMtC50gwY">
+                            <i class="  fa fa-play-circle-o"></i>
+                        </a>
+                    </div>
                        <h3>watch our video</h3>
                        
                    </div>
@@ -88,7 +106,7 @@
             </div>
         </div> 
     </section>
-
+  
     <!--Expertise part goes here-->
     <section id="expertise">
         <div class="container">
@@ -160,7 +178,7 @@
 
 
     <!--Team part goes here-->
-    <section>
+    <section id="team">
        <div class="team-img">
            <div class="team-overlay">
             <div class="container">
@@ -220,7 +238,7 @@
 
 
     <!--Our works go here-->
-    <section>
+    <section id="work">
         <div class="container">
             <div class="workhead">
                 <h1>OUR WORKS</h1>
@@ -237,39 +255,98 @@
             <div class="workmain">
                <div class="workitem">
                    <img src="images/work1 (1).jpg" alt="work1">
+                   <div class="work-overlay">
+                    <a class="venobox" data-gall="gallery01" href="images/work1 (1).jpg">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                   </div>
                </div>
                <div class="workitem">
                    <img src="images/work1 (2).jpg" alt="work2">
+                   <div class="work-overlay">
+                    <a class="venobox" data-gall="gallery01" href="images/work1 (2).jpg">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                   </div>
                </div>
                <div class="workitem">
                    <img src="images/work1 (3).jpg" alt="work3">
+                   <div class="work-overlay">
+                    <a class="venobox" data-gall="gallery01" href="images/work1 (3).jpg">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                   </div>
                </div>
                <div class="workitem">
                    <img src="images/work1 (4).jpg" alt="work3">
+                   <div class="work-overlay">
+                    <a class="venobox" data-gall="gallery01" href="images/work1 (4).jpg">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                   </div>
                </div>
                <div class="workitem">
                    <img src="images/work1 (5).jpg" alt="work3">
+                   <div class="work-overlay">
+                    <a class="venobox" data-gall="gallery01" href="images/work1 (5).jpg">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                   </div>
                </div>
                <div class="workitem">
                    <img src="images/work1 (6).jpg" alt="work3">
+                   <div class="work-overlay">
+                    <a class="venobox" data-gall="gallery01" href="images/work1 (6).jpg">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                   </div>
                </div>
                <div class="workitem">
                    <img src="images/work1 (7).jpg" alt="work3">
+                   <div class="work-overlay">
+                    <a class="venobox" data-gall="gallery01" href="images/work1 (7).jpg">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                   </div>
                </div>
                <div class="workitem">
-                   <img src="images/work1 (8).jpg" alt="work3">
+                   <img src="images/work1 (8).jpg" alt="work3"><div class="work-overlay">
+                    <a class="venobox" data-gall="gallery01" href="images/work1 (8).jpg">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                   </div>
                </div>
                <div class="workitem">
                    <img src="images/work1 (9).jpg" alt="work3">
+                   <div class="work-overlay">
+                    <a class="venobox" data-gall="gallery01" href="images/work1 (9).jpg">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                   </div>
                </div>
                <div class="workitem">
                    <img src="images/work1 (10).jpg" alt="work3">
+                   <div class="work-overlay">
+                    <a class="venobox" data-gall="gallery01" href="images/work1 (10).jpg">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                   </div>
                </div>
                <div class="workitem">
                    <img src="images/work1 (11).jpg" alt="work3">
+                   <div class="work-overlay">
+                    <a class="venobox" data-gall="gallery01" href="images/work1 (11).jpg">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                   </div>
                </div>
                <div class="workitem">
                    <img src="images/work1 (12).jpg" alt="work3">
+                   <div class="work-overlay">
+                    <a class="venobox" data-gall="gallery01" href="images/work1 (12).jpg">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                   </div>
                </div>
             </div>
             <div class="container">
@@ -283,7 +360,7 @@
 
 
     <!--quote part goes here-->
-    <section>
+    <section id="people">
         <div class="quote-img">
             <div class="quote-overlay">
                 <div class="container">
@@ -309,7 +386,7 @@
 
 
     <!--News and client part goes here-->
-    <section>
+    <section id="footer">
        <div class="container">
         <div class="news-client">
         <div class="news">
@@ -380,7 +457,11 @@
 
 
     <!--footer part goes here-->
-    <section>
+
+    <a href="#" class="backtop">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+    <section >
         <div class="footer-img">
             <div class="footer-overlay">
                 <div class="container">
@@ -441,5 +522,11 @@
             </div> 
         </div>
     </section>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>

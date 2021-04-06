@@ -17,18 +17,27 @@ ul,ol {
     width: 950px;
     margin: 0 auto;
 }
+/*preloader goes her4e*/
+
 
 /*Navbar goes here*/
 
-nav {
+.nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 999;
+   transition: all linear .4s;
 }
+.bg {
+    background-color:#00e0d162 ;
+     
+}
+
 .nav-main {
     display: flex;
+   
 }
 .logo {
     width: 140px;
@@ -53,6 +62,10 @@ nav {
     font-weight: 400;
     transition: all linear .3s;
     position: relative;
+}
+.bg .menu ul li a {
+    line-height: 60px;
+   
 }
 .menu ul li a:hover {
     color: #00e0d0;
@@ -86,6 +99,7 @@ nav {
     background-repeat: no-repeat;
     height: 100vh;
 }
+
 .banner-overlay {
     position: absolute;
     top: 0;
@@ -109,6 +123,37 @@ nav {
     padding: 58px;
     position: relative;
 }
+.typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+   opacity: 0;
+	display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
 .banner-text p {
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
@@ -453,12 +498,39 @@ nav {
    padding-bottom: 85px;
   
 }
-.workitem{
-    width: 16.47%;
+.workitem {
+    width: 16.66%;
+    position: relative;
+    }
+.work-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.616);
+    justify-content: center;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .3s;
 }
-.workitem img{
+.work-overlay i{
+    color: #fff;
+    background-color: #00e0d0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    align-self: center;
+}
+    .workitem img {
     display: block;
-}
+    width: 100%;
+    }
+   
+
 .workfoot{
     text-align: center;
     padding-bottom: 85px;
@@ -471,6 +543,10 @@ nav {
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;   
+}
+.workitem:hover .work-overlay{
+    opacity: 1;
+    height: 100%;
 }
 
 
@@ -778,3 +854,87 @@ input[type=email], select {
     font-family: 'Roboto', sans-serif;
     color: #fff;
 }
+.backtop{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 999;
+    display: none;
+}
+
+.backtop i{
+    width: 50px;
+    height: 50px;
+    background-color: cyan;
+    border-radius: 50%;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999999;
+}
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+}
+  .loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #ba55d3;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+  }
+  .loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #ff00ff;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+  }
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
